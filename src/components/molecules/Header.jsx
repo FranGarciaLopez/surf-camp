@@ -19,7 +19,7 @@ const Header = () => {
                      <div className="flex flex-wrap items-center justify-between py-2 my-5 mx-5 lg:mx-20">
                             <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                                    <Image
-                                          src="/src/assets/images/logo.png"
+                                          src="https://res.cloudinary.com/dgvvnopu7/image/upload/q_auto,f_auto/v1751452410/logo_cl1sdl.png"
                                           className="h-12"
                                           alt="Surf Camp Logo"
                                           draggable="false"
