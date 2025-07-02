@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import "tailwindcss";
+@import "tailwindcss";
+
+h2 {
+  @apply text-5xl font-semibold text-center mb-10 text-cyan-200 drop-shadow-lg;
+}
+
+h3 {
+  @apply text-2xl font-semibold text-cyan-200 mb-2;
+}
+
+section {
+  @apply bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white shadow-lg;
+}
+
+p {
+  @apply tracking-widest text-lg mb-2;
+}
+
+/* use backdrop blur */
+nav.bg-transparent {
+  background-color: transparent;
+}
+
+/* Background color when scrolled */
+nav.navbar-scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(3px);
+}
+
+.gallery-image {
+  animation: reveal 0.5s ease-in-out both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 50%;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    filter: blur(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
