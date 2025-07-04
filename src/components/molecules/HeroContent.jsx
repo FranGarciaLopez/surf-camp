@@ -5,7 +5,7 @@ import Button from "../atoms/Button";
 const HeroContent = () => (
   <section className="relative h-screen overflow-hidden">
     <Image
-      src="https://res.cloudinary.com/dgvvnopu7/image/upload/q_auto,f_auto/v1751452411/hero-img_kjdfig.avif"
+      src="/1.webp"
       alt="Hero Image"
       className="w-full h-full object-cover scale-110"
     />
