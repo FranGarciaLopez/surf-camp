@@ -8,6 +8,8 @@ const HeroContent = () => (
       src="/1.webp"
       alt="Hero Image"
       className="w-full h-full object-cover scale-110"
+      loading="lazy" // Added lazy loading
+      decoding="async" // Added async decoding
     />
     <div className="absolute inset-0 bg-black opacity-20"></div>
 
@@ -18,11 +20,13 @@ const HeroContent = () => (
           alt="Logo"
           draggable="false"
           className="w-80 mb-4 lg:w-96 lg:mb-6 xl:w-110 xl:mb-8"
+          loading="lazy" // Added lazy loading
+          decoding="async" // Added async decoding
         />
       </Title>
       <Button label="Join now the experience" />
     </div>
-  </section >
+  </section>
 );
 
 export default HeroContent;

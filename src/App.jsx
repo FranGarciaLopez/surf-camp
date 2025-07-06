@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import Hero from './components/organisms/Hero';
 import CampLife from './components/pages/CampLife';
 import SurfLessons from './components/pages/SurfLessons';
+import BookNow from './components/molecules/BookNow';
 import Lenis from '@studio-freight/lenis';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Hero />
       <CampLife />
       <SurfLessons />
+      <BookNow />
     </>
   );
 }
